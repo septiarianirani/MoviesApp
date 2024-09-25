@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (5.9.1)
+  - AlamofireImage (4.3.0):
+    - Alamofire (~> 5.8)
+  - Cosmos (25.0.0)
+  - Differentiator (5.0.0)
+  - IQKeyboardManagerSwift (6.5.16)
+  - PKHUD (5.3.0)
+  - RxCocoa (6.7.1):
+    - RxRelay (= 6.7.1)
+    - RxSwift (= 6.7.1)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.7.1):
+    - RxSwift (= 6.7.1)
+  - RxSwift (6.7.1)
+  - SwiftyJSON (5.0.1)
+  - TextFieldEffects (1.6.0)
+  - Toast-Swift (5.0.1)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - Cosmos
+  - IQKeyboardManagerSwift
+  - PKHUD
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - SwiftyJSON
+  - TextFieldEffects
+  - Toast-Swift
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - Cosmos
+    - Differentiator
+    - IQKeyboardManagerSwift
+    - PKHUD
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SwiftyJSON
+    - TextFieldEffects
+    - Toast-Swift
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  AlamofireImage: 843953fa97bee5f561cf05d83abd759e590b068d
+  Cosmos: f1eac42a1a6480b35cf5226d70bd0fadc004b4aa
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 4151ba01152436b08271e08410135e099880eae5
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: 5fe83efa3a8f1d07b697f957311aef1264bab53d
+
+COCOAPODS: 1.15.2

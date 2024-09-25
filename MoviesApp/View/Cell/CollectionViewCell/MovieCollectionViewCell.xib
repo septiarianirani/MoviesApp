@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="MoviesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QFP-5R-s3m">
+                        <rect key="frame" x="4" y="0.0" width="132" height="169.33333333333334"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QFP-5R-s3m" secondAttribute="height" multiplier="0.78:1" id="VrK-aH-gFE"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zOO-aY-mUm">
+                        <rect key="frame" x="2" y="177.33333333333334" width="136" height="40.333333333333343"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-ne-0DC">
+                                <rect key="frame" x="0.0" y="0.0" width="136" height="19.333333333333332"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02 Agust 2024" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TY-MI-dI2">
+                                <rect key="frame" x="0.0" y="23.333333333333314" width="136" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="QFP-5R-s3m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2q2-q3-RT9"/>
+                <constraint firstAttribute="trailing" secondItem="QFP-5R-s3m" secondAttribute="trailing" constant="4" id="DM7-jO-Tgy"/>
+                <constraint firstAttribute="trailing" secondItem="zOO-aY-mUm" secondAttribute="trailing" constant="2" id="FXa-YG-Wbr"/>
+                <constraint firstItem="QFP-5R-s3m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="Fci-91-etK"/>
+                <constraint firstItem="zOO-aY-mUm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="P05-dk-9Ar"/>
+                <constraint firstItem="zOO-aY-mUm" firstAttribute="top" secondItem="QFP-5R-s3m" secondAttribute="bottom" constant="8" id="T6t-N5-JNp"/>
+            </constraints>
+            <connections>
+                <outlet property="movieDateLabel" destination="7TY-MI-dI2" id="AcC-I3-fWp"/>
+                <outlet property="movieNameLabel" destination="bKh-ne-0DC" id="ogE-Ol-p8b"/>
+                <outlet property="posterImageView" destination="QFP-5R-s3m" id="srs-hp-ayv"/>
+            </connections>
+            <point key="canvasLocation" x="10.687022900763358" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TrailerCollectionViewCell" customModule="MoviesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PVw-tm-yT5">
+                        <rect key="frame" x="0.0" y="4" width="220" height="152"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="YPP-CX-nxO">
+                        <rect key="frame" x="98" y="68" width="24" height="24"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="dIb-j0-wou"/>
+                            <constraint firstAttribute="height" constant="24" id="spq-1g-EtS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="YPP-CX-nxO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="A3k-bl-U0D"/>
+                <constraint firstItem="PVw-tm-yT5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="POX-Cy-bQH"/>
+                <constraint firstItem="PVw-tm-yT5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VYY-sb-HlT"/>
+                <constraint firstItem="YPP-CX-nxO" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aKm-1v-o64"/>
+                <constraint firstAttribute="trailing" secondItem="PVw-tm-yT5" secondAttribute="trailing" id="oNh-P7-RbO"/>
+                <constraint firstAttribute="bottom" secondItem="PVw-tm-yT5" secondAttribute="bottom" constant="4" id="zLD-gp-SuI"/>
+            </constraints>
+            <connections>
+                <outlet property="playIconView" destination="YPP-CX-nxO" id="Iup-6G-EKG"/>
+                <outlet property="trailerImageView" destination="PVw-tm-yT5" id="wbr-8B-50J"/>
+            </connections>
+            <point key="canvasLocation" x="41.221374045801525" y="20.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play" width="512" height="512"/>
+    </resources>
+</document>
